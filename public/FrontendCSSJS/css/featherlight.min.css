@@ -1,0 +1,93 @@
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.2.0 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+    .featherlight {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #333;
+        background: rgba(0, 0, 0, 0);
+    }
+    .featherlight:last-of-type {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .featherlight:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+    .featherlight .featherlight-content {
+        position: relative;
+        font-size: 14px;
+        text-align: left;
+        vertical-align: middle;
+        display: inline-block;
+        overflow: auto;
+        padding: 25px 25px 0;
+        border-bottom: 25px solid transparent;
+        min-width: 30%;
+        margin-left: 0%;
+        margin-right: 0%;
+        max-height: 95%;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        font-family: "UnitedSans", tahoma, helvetica, arial, sans-serif;
+        color: #ddd;
+        background: #4e4a49;
+        cursor: auto;
+        white-space: normal;
+    }
+    .featherlight .featherlight-inner {
+        display: block;
+    }
+    .featherlight .featherlight-close-icon {
+        position: absolute;
+        z-index: 9999;
+        top: -20px;
+        right: 3px;
+        border-radius: 50%;
+        line-height: 22px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        text-align: center;
+        font: Arial, sans-serif;
+        background: #000;
+        font-size: 11px;
+        color: #fff;
+    }
+    .featherlight .featherlight-image {
+        width: 100%;
+    }
+    .featherlight-iframe .featherlight-content {
+        border-bottom: 0;
+        padding: 0;
+    }
+    .featherlight iframe {
+        border: 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .featherlight .featherlight-content {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-height: 98%;
+     
+        
+    }
+}
